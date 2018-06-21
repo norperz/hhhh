@@ -31,11 +31,11 @@ module.exports = class RPAppIDCommand extends Command {
           type: 'string',
           label: 'appid',
           validate: (id) => {
-            if (/[0-9]{18}/.test(id)) {
+            if (/[0-9]{17}/.test(id)) {
               return true;
             }
 
-            return 'The AppID has to be 18 digits';
+            return 'The AppID has to be 17 digits-norp';
           }
         }
       ]
